@@ -76,6 +76,7 @@ IP 전체 길이(`iph_len`)에서 IP 헤더와 TCP 헤더 길이를 빼서 HTTP 
 프로토콜은 `switch` 문을 사용해 아래와 같이 분기해서 처리했다. TCP 헤더 뒤의 Payload 부분이 HTTP Message가 된다.
 
 ![프로토콜 분기](images/protocol_switch.png)
+![프로토콜 분기](images/protocol_switch2.png)
 
 BPF 필터를 "tcp"로 걸어서 어차피 TCP만 들어오긴 하는데, 혹시 몰라서 UDP/ICMP/기타 케이스도 남겨뒀다.
 
