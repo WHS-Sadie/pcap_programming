@@ -1,5 +1,3 @@
-# pcap_programming
-
 # PCAP Programming - TCP 패킷 파싱
 
 ## 1. 과제 개요
